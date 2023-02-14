@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var fechaNovios = new Date('2021,07,10');
+    var fechaNovios = new Date('2021,07,10'.replace(/-/g, "/"));
     var fechaActual = new Date();
     var diferencia = fechaActual - fechaNovios - 3600000 - 1000;
     var diferenciaSegundos = diferencia /1000;
